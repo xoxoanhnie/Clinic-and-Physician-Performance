@@ -1,3 +1,9 @@
 ## Project Overview
 
-This project uses hospital data and advanced SQL analysis to identify trends in patient length of stay, service utilization, and specialty performance, with the goal of supporting data-driven improvements in healthcare operations and outcomes.
+This project analyzes hospital patient data using advanced SQL to uncover
+patterns related to length of stay, medical procedures, patient demographics,
+and readmission-related indicators.
+<br>
+The goal is to translate raw hospital data into actionable insights that can
+support operational efficiency, resource allocation, and improved patient
+outcomes.
