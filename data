@@ -1,1 +1,6 @@
-https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/notebook#Data-Preparation-&-Exploration
+
+• The data set can be found on [Kaggle](https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/notebook#Data-Preparation-&-Exploration) <br>
+• The health table contains hospital stay details, procedures, and medical specialties. <br>
+• The demographics table contains information about patient race, medication use, and lab procedures. <br>
+The hospital information contained in this dataset was taken from the University of California Machine Learning Repository.  <br>
+This dataset represents ten years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks. These datasets were analyzed using MySQL Workbench, which provided the ideal platform for managing, querying, and analyzing structured hospital data.
