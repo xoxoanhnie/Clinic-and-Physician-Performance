@@ -1,33 +1,25 @@
-## Project Overview
-
-This project analyzes hospital patient data using advanced SQL to uncover
-patterns related to length of stay, medical procedures, patient demographics,
-and readmission-related indicators.
-<br>
-The goal is to translate raw hospital data into actionable insights that can
-support operational efficiency, resource allocation, and improved patient
-outcomes.
-## Key Questions Answered
-1. How is patient length of stay distributed? <br>
-2. Which medical specialties perform the most procedures on average? <br>
-3. Do laboratory utilization patterns differ across demographic groups? <br>
-4. How does procedure frequency relate to length of hospital stay? <br>
-5. Which patients are discharged faster than the hospital average?
 # Clinic and Physician Performance Analysis (SQL)
 
 ## Project Overview
 This project analyzes hospital patient data using advanced SQL to uncover
-patterns related to length of stay and physician specialty performance.
-The goal is to support data-driven decision-making for hospital operations,
-resource allocation, and quality of care.
+patterns related to length of stay, medical procedures, patient demographics,
+and readmission-related indicators.
+
+The goal is to translate raw hospital data into actionable insights that support
+operational efficiency, resource allocation, and improved patient outcomes.
+
+---
+
+## Key Questions Answered
+1. How is patient length of stay distributed?
+2. Which medical specialties perform the most procedures on average?
+3. Do laboratory utilization patterns differ across demographic groups?
+4. How does procedure frequency relate to length of hospital stay?
+5. Which patients are discharged faster than the hospital average?
 
 ---
 
 ## Analyses Included
-- Length of stay distribution
-- Medical specialty procedure intensity
-
----
 
 ## 1. Length of Stay Distribution
 
@@ -45,7 +37,7 @@ to visualize the distribution.
 ### Why It Matters
 Understanding length-of-stay patterns helps hospitals:
 - Plan bed capacity
-- Identify bottlenecks
+- Identify operational bottlenecks
 - Improve patient throughput
 
 ---
@@ -60,13 +52,15 @@ Which medical specialties tend to perform more procedures per patient?
 
 ### Description
 This query calculates the average number of procedures by medical specialty,
-filtering to specialties with sufficient patient volume to ensure stability.
+filtering to specialties with sufficient patient volume to ensure stable estimates.
 
 ### Why It Matters
 Specialties with higher procedure intensity may:
 - Require additional staffing
 - Drive longer hospital stays
 - Consume more hospital resources
+
+---
 
 ## 3. Lab Utilization by Race
 
@@ -77,10 +71,17 @@ Are there differences in lab usage across demographic groups?
 `queries/lab_utilization_by_race.sql`
 
 ### Description
-This analysis can highlight:
+This analysis examines average laboratory utilization across racial groups.
+Results are descriptive and intended to highlight patterns for further
+investigation.
+
+### Why It Matters
+This analysis can help identify:
 - Potential disparities in care
 - Differences in diagnostic intensity
-- Areas for equity-focused investigation
+- Areas for equity-focused follow-up analysis
+
+---
 
 ## 4. Procedure Frequency vs. Length of Stay
 
@@ -91,9 +92,12 @@ Do patients with more lab procedures stay longer in the hospital?
 `queries/procedure_frequency_vs_length_of_stay.sql`
 
 ### Insight
-Higher diagnostic intensity is associated with longer average stays, which may reflect more complex cases or delayed discharge.
+Higher diagnostic intensity is associated with longer average hospital stays,
+which may reflect more complex cases or delays in discharge.
 
-## 5. Patients Discharged Faster than Average
+---
+
+## 5. Patients Discharged Faster Than Average
 
 ### Business Question
 Which patients are discharged more efficiently than average?
@@ -102,16 +106,16 @@ Which patients are discharged more efficiently than average?
 `queries/patients_discharged_avg.sql`
 
 ### Description
-Identifying efficient discharges helps:
-- Benchmark best practices
-- Improve care pathways
-- Reduce unnecessary hospital days
+This query identifies patients with lengths of stay below the hospital average,
+highlighting potentially efficient care pathways.
 
-## 6. Patient-Level Summary (Narrative Output)
+---
+
+## 6. Patient-Level Summary Output
 
 ### Purpose
-To create readable summaries for reporting and auditing
+To generate human-readable patient summaries that support reporting,
+auditing, and exploratory review.
 
 ### SQL File
 `queries/patient_level_summary.sql`
-
