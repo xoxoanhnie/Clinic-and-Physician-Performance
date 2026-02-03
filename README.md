@@ -67,3 +67,51 @@ Specialties with higher procedure intensity may:
 - Require additional staffing
 - Drive longer hospital stays
 - Consume more hospital resources
+
+## 3. Lab Utilization by Race
+
+### Business Question
+Are there differences in lab usage across demographic groups?
+
+### SQL File
+`queries/lab_utilization_by_race.sql`
+
+### Description
+This analysis can highlight:
+- Potential disparities in care
+- Differences in diagnostic intensity
+- Areas for equity-focused investigation
+
+## 4. Procedure Frequency vs. Length of Stay
+
+### Business Question
+Do patients with more lab procedures stay longer in the hospital?
+
+### SQL File
+`queries/procedure_frequency_vs_length_of_stay.sql`
+
+### Insight
+Higher diagnostic intensity is associated with longer average stays, which may reflect more complex cases or delayed discharge.
+
+## 5. Patients Discharged Faster than Average
+
+### Business Question
+Which patients are discharged more efficiently than average?
+
+### SQL File
+`queries/patients_discharged_avg.sql`
+
+### Description
+Identifying efficient discharges helps:
+- Benchmark best practices
+- Improve care pathways
+- Reduce unnecessary hospital days
+
+## 6. Patient-Level Summary (Narrative Output)
+
+### Purpose
+To create readable summaries for reporting and auditing
+
+### SQL File
+`queries/patient_level_summary.sql`
+
